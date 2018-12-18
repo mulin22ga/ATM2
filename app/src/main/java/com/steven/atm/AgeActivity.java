@@ -24,6 +24,7 @@ public class AgeActivity extends BasaActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_age);
+        rainbow = getResources().getStringArray(R.array.rainbow);
         RecyclerView ageRecycler =findViewById(R.id.recycler);
         ageRecycler.setHasFixedSize(true);
         ageRecycler.setLayoutManager(new LinearLayoutManager(this));
